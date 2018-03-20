@@ -14,7 +14,7 @@ class normal: UITableViewCell {
     @IBOutlet weak var titleText: UILabel!
     var model : baseModel?{
         didSet{
-            
+//            得到的
             guard model != nil else {return}
             //定义URL对象
             let url = URL(string: (model?.imgsrc)!)
