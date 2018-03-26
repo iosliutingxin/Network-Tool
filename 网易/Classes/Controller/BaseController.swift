@@ -38,7 +38,7 @@ extension BaseController {
         //1、隐藏内容view
         contentView?.isHidden = true
         
-        //2、添加执行动画
+        //2、添加执行动画111111
         view.addSubview(anmationImageView)
         
         //3、执行动画
