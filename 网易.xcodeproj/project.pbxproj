@@ -15,6 +15,8 @@
 		5164DF16205D5DF10075BB54 /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164DF15205D5DF10075BB54 /* __UITests.swift */; };
 		5164DF29205EAB040075BB54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164DF26205EAB040075BB54 /* ViewController.swift */; };
 		5164DF2B205EACAF0075BB54 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164DF2A205EACAF0075BB54 /* NetworkTools.swift */; };
+		518AF37D2067F0B3006CF0ED /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518AF37C2067F0B3006CF0ED /* CustomNavigationController.swift */; };
+		519FB95F2067DA250053B407 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519FB95E2067DA250053B407 /* BaseController.swift */; };
 		51DA0CDE205FA4CE0022DBA2 /* countDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA0CDD205FA4CE0022DBA2 /* countDown.swift */; };
 		51DA0CE0205FA91E0022DBA2 /* countDown.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51DA0CDF205FA91E0022DBA2 /* countDown.xib */; };
 		51DA0CE2205FFD640022DBA2 /* baseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA0CE1205FFD640022DBA2 /* baseModel.swift */; };
@@ -60,6 +62,8 @@
 		5164DF17205D5DF10075BB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5164DF26205EAB040075BB54 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5164DF2A205EACAF0075BB54 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		518AF37C2067F0B3006CF0ED /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		519FB95E2067DA250053B407 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		51DA0CDD205FA4CE0022DBA2 /* countDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countDown.swift; sourceTree = "<group>"; };
 		51DA0CDF205FA91E0022DBA2 /* countDown.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = countDown.xib; sourceTree = "<group>"; };
 		51DA0CE1205FFD640022DBA2 /* baseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseModel.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				5164DF26205EAB040075BB54 /* ViewController.swift */,
+				518AF37C2067F0B3006CF0ED /* CustomNavigationController.swift */,
+				519FB95E2067DA250053B407 /* BaseController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -372,10 +378,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-网易/Pods-网易-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,7 +528,9 @@
 			files = (
 				5164DF29205EAB040075BB54 /* ViewController.swift in Sources */,
 				5164DEF6205D5DF10075BB54 /* AppDelegate.swift in Sources */,
+				519FB95F2067DA250053B407 /* BaseController.swift in Sources */,
 				5164DF2B205EACAF0075BB54 /* NetworkTools.swift in Sources */,
+				518AF37D2067F0B3006CF0ED /* CustomNavigationController.swift in Sources */,
 				51DA0CE2205FFD640022DBA2 /* baseModel.swift in Sources */,
 				51DA0CE520600A830022DBA2 /* normal.swift in Sources */,
 				51DA0CDE205FA4CE0022DBA2 /* countDown.swift in Sources */,

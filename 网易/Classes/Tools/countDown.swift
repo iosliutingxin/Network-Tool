@@ -34,24 +34,33 @@ extension countDown{
     
     @objc func phoneValueChange(tagert : UITextField) {
         
-//        print(tagert.text)
-       print(self.verificationMobile(mobile: tagert.text!))
+        guard self.verificationMobile(mobile: tagert.text!)  else {
+            clickButton.isEnabled = false
+            return
+        }
+        clickButton.isEnabled = true
     }
     
     @objc func yzmValueChange(tagert : UITextField) {
         
-        print(tagert.text)
+        print(self.verificationCode(code: tagert.text!))
         
     }
     
 }
-//判断手机号
+//正则表达式
 extension countDown{
-    
+    //判断手机号
     func verificationMobile(mobile : String) -> Bool {
         let predicateStr = "^((13[0-9])|(15[^4,\\D]) |(17[0,0-9])|(18[0,0-9]))\\d{8}$"
         let predicate =  NSPredicate(format: "SELF MATCHES %@" ,predicateStr)
         return predicate.evaluate(with: mobile)
+    }
+    //判断验证码
+    func verificationCode(code : String) -> Bool {
+        let predicateStr = "(?<![0-9])([0-9]{4})(?![0-9])"
+        let predicate =  NSPredicate(format: "SELF MATCHES %@" ,predicateStr)
+        return predicate.evaluate(with: code)
     }
     
 }
