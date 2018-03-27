@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510C0AE3206A2F3900D1C745 /* menuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510C0AE2206A2F3900D1C745 /* menuView.swift */; };
+		510C0AE5206A2F5100D1C745 /* menuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 510C0AE4206A2F5100D1C745 /* menuView.xib */; };
 		5164DEF6205D5DF10075BB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164DEF5205D5DF10075BB54 /* AppDelegate.swift */; };
 		5164DEFB205D5DF10075BB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5164DEF9205D5DF10075BB54 /* Main.storyboard */; };
 		5164DEFD205D5DF10075BB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5164DEFC205D5DF10075BB54 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		0D88CDD8E876A983CAAB055A /* Pods___.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F53D40370512CE2F74989E5 /* Pods-网易Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-网易Tests/Pods-网易Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D926A77A1FAFE6D7BDBD238 /* Pods-网易Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-网易Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-网易Tests/Pods-网易Tests.release.xcconfig"; sourceTree = "<group>"; };
+		510C0AE2206A2F3900D1C745 /* menuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuView.swift; sourceTree = "<group>"; };
+		510C0AE4206A2F5100D1C745 /* menuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = menuView.xib; sourceTree = "<group>"; };
 		5164DEF2205D5DF10075BB54 /* 网易.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5164DEF5205D5DF10075BB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5164DEFA205D5DF10075BB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 			children = (
 				51DA0CE320600A830022DBA2 /* normal.swift */,
 				51DA0CE420600A830022DBA2 /* normal.xib */,
+				510C0AE2206A2F3900D1C745 /* menuView.swift */,
+				510C0AE4206A2F5100D1C745 /* menuView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				5164DEFD205D5DF10075BB54 /* Assets.xcassets in Resources */,
 				5164DEFB205D5DF10075BB54 /* Main.storyboard in Resources */,
 				51DA0CE0205FA91E0022DBA2 /* countDown.xib in Resources */,
+				510C0AE5206A2F5100D1C745 /* menuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +548,7 @@
 				518AF37D2067F0B3006CF0ED /* CustomNavigationController.swift in Sources */,
 				51DA0CE2205FFD640022DBA2 /* baseModel.swift in Sources */,
 				51DA0CE520600A830022DBA2 /* normal.swift in Sources */,
+				510C0AE3206A2F3900D1C745 /* menuView.swift in Sources */,
 				51DA0CDE205FA4CE0022DBA2 /* countDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

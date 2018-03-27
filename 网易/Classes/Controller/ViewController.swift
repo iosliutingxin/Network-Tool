@@ -10,6 +10,20 @@ import UIKit
 private let cellID = "normolcell"
 class ViewController: BaseController {
     
+    
+    fileprivate  lazy var menu : menuView = {
+        let menu = menuView.createMenu()
+        menu.frame =  (UIApplication.shared.keyWindow?.frame)!
+        return menu
+    }()
+    var room02 : Room2ViewController = {
+        let room02 = Room2ViewController()
+        return room02
+    }()
+    var room01 : RoomController = {
+        let room01 = RoomController()
+        return room01
+    }()
     //懒加载倒计时
     lazy var countDoweView : countDown = {
         
@@ -74,7 +88,14 @@ extension ViewController{
     }
     @objc func clinkRight() {
         
+        
         print("clink right")
+        UIApplication.shared.keyWindow?.addSubview(menu)
+
+        UIView.animate(withDuration: 0.4) {
+//            self.menu.swing = !self.menu.swing!
+        }
+        
         
     }
 }
@@ -123,14 +144,12 @@ extension ViewController : UITableViewDataSource ,UITableViewDelegate{
     
     func presentShowVC()  {
         
-        let room01 = RoomController()
         present(room01, animated: true, completion: nil)
         
     }
     
     func pushVC()  {
         
-        let room02 = Room2ViewController()
         navigationController?.pushViewController(room02, animated: true)
     }
     
