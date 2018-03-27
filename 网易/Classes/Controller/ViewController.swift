@@ -61,7 +61,7 @@ extension ViewController{
 
   fileprivate func setNavegationView() {
     //隐藏导航栏
-    navigationController?.setNavigationBarHidden(true, animated: false)
+//    navigationController?.setNavigationBarHidden(true, animated: false)
     //设置背景图片
     navigationController?.navigationBar.setBackgroundImage(UIImage(named: "headBackView"), for: .default)
     //设置标题
@@ -115,6 +115,23 @@ extension ViewController : UITableViewDataSource ,UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        indexPath.row % 2 == 0 ? presentShowVC() : pushVC()
+    }
+    
+    func presentShowVC()  {
+        
+        let room01 = RoomController()
+        present(room01, animated: true, completion: nil)
+        
+    }
+    
+    func pushVC()  {
+        
+        let room02 = Room2ViewController()
+        navigationController?.pushViewController(room02, animated: true)
     }
     
 }
