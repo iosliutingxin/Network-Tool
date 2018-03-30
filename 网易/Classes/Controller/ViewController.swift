@@ -140,6 +140,8 @@ extension ViewController : UITableViewDataSource ,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         indexPath.row % 2 == 0 ? presentShowVC() : pushVC()
+        room02.model = newsModels[indexPath.row] as baseModel
+
     }
     
     func presentShowVC()  {
@@ -149,7 +151,8 @@ extension ViewController : UITableViewDataSource ,UITableViewDelegate{
     }
     
     func pushVC()  {
-        
+        room02.name = "Jimb"
+
         navigationController?.pushViewController(room02, animated: true)
     }
     

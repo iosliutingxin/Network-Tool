@@ -14,6 +14,7 @@ class menuView: UIView {
     @IBOutlet weak var content: UIView!
     @IBOutlet weak var con: UIView!
     @IBOutlet weak var table: UITableView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -22,11 +23,12 @@ class menuView: UIView {
         tapGesture.numberOfTapsRequired = 1
         con.addGestureRecognizer(tapGesture)
         
+        table.backgroundColor = UIColor.red
         table.dataSource = self
         table.delegate = self
         table.rowHeight = 80
-        table.backgroundColor = UIColor.white
         table.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+ 
         
     }
     
@@ -41,8 +43,15 @@ extension menuView{
     }
     
     @objc func clink() {
-        print("hello world")
-        self.removeFromSuperview()
+        UIView.animate(withDuration: 0.3, animations: {
+//            self.table.contentOffset = CGPoint(x: 139, y: -50)
+            self.content.bounds.size.width = 100
+        }) { (finish) in
+            print("动画")
+            self.removeFromSuperview()
+
+        }
+
     
     }
 }

@@ -18,7 +18,7 @@
             <subviews>
                 <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFT-7v-ZV5">
                     <rect key="frame" x="140" y="0.0" width="235" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.75130890049999999" green="0.63994971860000005" blue="0.44272401890000002" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AF6-Kp-huW">
                     <rect key="frame" x="0.0" y="0.0" width="140" height="667"/>
@@ -28,7 +28,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.14259502869999999" green="0.23476822529999999" blue="0.93236594549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="4Lf-uq-XcB"/>
                         <constraint firstItem="eX1-JU-2uB" firstAttribute="top" secondItem="AF6-Kp-huW" secondAttribute="top" id="9uc-SL-o9e"/>
